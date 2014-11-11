@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>MyPage</title>
+        <script id="jquery_183" type="text/javascript" class="library" src="jquery-1.8.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class='nav'>
+            <div class="bgchange">
+                <i class="prev" id="prev"></i>
+                <i class="lock locker" id="lock"></i>
+                <div class="info">
+                    <a href="#" target="_blank">点击左右侧按钮更换背景</a>
+                </div>
+                <i class="next" id="next"></i>
+            </div>
+            <ul class='tab'>
+                <li class='active' name='wy' >网页</li>
+                <li name='sp'>视频</li>
+                <li name='tb'>贴吧</li>
+                <li name='tp'>图片</li>
+                <li name='yy'>音乐</li>
+                <li name='zd'>知道</li>
+                <li name='fy'>翻译</li>
+            </ul>
+            <form class='search' target="_blank" action="http://www.baidu.com/s" method="GET">
+                <div>
+                    <input type="hidden" name="ie" value="utf-8">
+                </div>
+                <span style="width: 409px;">
+                    <input type="text" name="wd" id="searchbar" oninput="showbt()" placeholder="此处输入关键字进行搜索" maxlength="100" autocomplete="off" style="width: 360px;height:25px;">
+                </span>
+                <span id="cleansb" style="cursor:pointer;">清</span>
+                <span style="width: 85px;">
+                    <input type="submit"  value="百度搜索" onclick="focusback()"style="width: 85px;height:30px;cursor:pointer;">
+                </span>
+            </form>
+        </div>
+        <div class='nav2'>
+            <ul>
+                <li name='_nav1'><a href="test.html">1111111111111</a></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <div class='container'>
+            <div class='board'>
+
+            </div>
+        </div>
+    </body>
+</html>
