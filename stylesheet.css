@@ -1,6 +1,14 @@
+html , body , a {
+    cursor:url(img/chaossearch/tiny.ico), auto;
+}
+
+a:hover {
+    cursor:url(img/chaossearch/tinyhover.ico), pointer;
+}
+
 .nav {
     background-image:
-        url(http://moe123.com/static/img/mirugo_nanami_vs_kyoko.jpg);
+        url(img/chaossearch/mirugo_nanami_vs_kyoko.jpg);
     position: absolute;
     zoom: 1;
     width: 100%;
@@ -14,18 +22,19 @@
     overflow: hidden;
     transition: background-image 0.5s;
     transition-timing-function: linear;
+    z-index: 1;
 }
 
 .nav .bgchange{
     position: relative;
     top: 50px;
-    left: 110px;
-    width: 255px;
+    left: 15%;
+    width: 202px;
     padding: 5px;
     height: 22px;
     padding-left: 0px;
     opacity: 0.8;
-    background: url(http://moe123.com/static/img/lgray2.png);
+    background: url(img/chaossearch/lgray2.png);
     border-radius: 100px;
     overflow: hidden;
 }
@@ -52,18 +61,18 @@
 }
 
 .nav .bgchange i{
-    cursor: pointer;
+    cursor:url(img/chaossearch/tinyhover.ico), pointer;
     margin: 0 auto;
     display: block;
     margin-left: 5px;
     float: left;
     width: 22px;
     height: 22px;
-    background: url(http://moe123.com/static/img/icon-control.png) left center no-repeat;
+    background: url(img/chaossearch/icon-control.png) left center no-repeat;
 }
 
 .nav .bgchange .lock {
-    background: url(http://moe123.com/static/img/locker.png) center no-repeat;
+    background: url(img/chaossearch/locker.png) center no-repeat;
 }
 
 .nav .bgchange .next {
@@ -81,7 +90,7 @@
 .nav .tab{
     position:relative;
     top:360px;
-    left:560px;
+    left:50%;
     width:800px;
     height:40px;
     overflow:hidden;
@@ -89,7 +98,7 @@
 }
 
 .nav li{
-    cursor: pointer;
+    cursor:url(img/chaossearch/tinyhover.ico), pointer;
     opacity:0.4;
     border-radius:10px;
     width:60px;
@@ -121,7 +130,7 @@
 .nav .search{
     position:relative;
     top:345px;
-    left:600px;
+    left:53%;
     width:800px;
     height:40px;
     overflow:hidden;
@@ -130,14 +139,149 @@
 
 #cleansb {
     position: absolute;
-    left: 340px;
-    top: 7px;
-    opacity: 0.5;
+    background: url(img/quickdelete.png) no-repeat;
+    background-position: 10px 10px;
+    width: 30px;
+    height: 30px;
+    left: 330px;
+    top: 2px;
     visibility: hidden;
+}
+
+#cleansb:hover{
+    background-position: 10px -24px;
 }
 
 .nav2 {
     position: relative;
-    top: 700px;
-    left: 100px;
+    top: 660px;
+    width: 980px;
+    height: 60px;
+    margin: 0 auto;
+    z-index: 1;
+    border-radius: 2px;
+    overflow: hidden;
 }
+
+.nav2 a:first-child{
+    width: 123px;
+    border-top-left-radius: 2px;
+border-bottom-left-radius: 2px;
+border-left: 1px solid #dedede;
+}
+
+.nav2 a.active {
+box-shadow: inset 1px 1px 2px #ddd;
+background: #fdfdfd;
+font-weight: bold;
+color: #666;
+border-bottom: 1px solid #dedede;
+}
+
+.nav2 a {
+background: white;
+border: 1px solid #dedede;
+border-left: 0;
+width: 124px;
+text-align: center;
+display: inline;
+float: left;
+line-height: 36px;
+height: 36px;
+text-align:center;
+outline: 0;
+color: #222;
+text-decoration: none;
+}
+
+#board{
+    clear:both;
+    position: relative;
+    top: 670px;
+    height: 100%;
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#gotop{
+    position: fixed;
+    cursor:url(img/chaossearch/tinyhover.ico), pointer;
+    bottom: 80px;
+    right: 5%;
+    height: 45px;
+    width: 46px;
+    visibility: visible;
+    z-index: 0;
+    background-image:
+        url(img/chaossearch/5-120601160026.gif);
+    background-color:transparent;
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.m-border  {
+    box-sizing: content-box;
+    border: 1px solid #dedede;
+    position: relative;
+    margin-bottom: 15px;
+    zoom:1;
+    margin: 0 auto;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+#tbar {
+    position: fixed;
+    clear:both;
+    opacity: 0.75;
+    top: -40px;
+    left: 5%;
+    right: 5%;
+    height: 38px;
+    margin: 0 auto;
+    z-index: 2;
+    overflow: hidden;
+    transition: 0.3s;
+    transition-timing-function: linear;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border-radius: 2px;
+}
+
+.tb2048 {
+    border: 1px solid grey ;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.tb2048 tr td{
+background-color: #e6e6e6;
+width: 124px;
+height: 124px;
+border:#666666;
+font-size:48px;
+text-align:center;
+text-decoration: none;
+transition: 0.3s;
+transition-timing-function: linear;
+}
+
+#st2048 {
+    position: absolute;
+    left: 22.9%;
+    cursor:url(img/chaossearch/tinyhover.ico), pointer;
+    z-index: 3;
+    width: 530px;
+    height: 530px;
+    border:#666666;
+    font-size:48px;
+    text-align:center;
+    text-decoration: none;
+    transition: 0.3s;
+    transition-timing-function: linear;
+    background-color: #616161;
+    opacity: 0.35;
+    visibility: visible;
+}
+
