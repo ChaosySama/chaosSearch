@@ -208,9 +208,10 @@ text-decoration: none;
     position: fixed;
     cursor:url(img/chaossearch/tinyhover.ico), pointer;
     bottom: 80px;
-    right: 5%;
+    left: 50%;
     height: 45px;
     width: 46px;
+    margin-left: 490px;
     visibility: visible;
     z-index: 0;
     background-image:
@@ -227,6 +228,7 @@ text-decoration: none;
     position: relative;
     margin-bottom: 15px;
     zoom:1;
+    z-index: 1;
     margin: 0 auto;
     border-radius: 2px;
     overflow: hidden;
@@ -285,3 +287,45 @@ transition-timing-function: linear;
     visibility: visible;
 }
 
+.lybformnm {
+    float: left;
+}
+
+.lybformnm div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.lybformct {
+    float:left;
+    margin-top: 7px;
+}
+
+.lybformct textarea {
+    resize:none;
+}
+
+.lybformtj button {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.lybnm {
+    float: left;
+    width: 200px;
+    overflow: hidden;
+}
+
+.lybnm div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.lybct {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    word-wrap:break-word;
+    overflow: hidden;
+}

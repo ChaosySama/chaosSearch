@@ -1,0 +1,15 @@
+.first {
+	border: solid 2px blue;
+	height: 300px;
+}
+
+.second {
+	border: solid 1px red;
+	height: 300px;
+}
+
+.s1{
+	border: solid 1px black;
+	height: 300px;
+	width: 50%;
+}

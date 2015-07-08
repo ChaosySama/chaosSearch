@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>36种漂亮的CSS3网页按钮Button样式</title>
+<style type="text/css">
+.button22{
+width: 140px;
+line-height: 38px;
+text-align: center;
+font-weight: bold;
+color: #fff;
+text-shadow:1px 1px 1px #333;
+border-radius: 5px;
+margin:0 20px 20px 0;
+position: relative;
+overflow: hidden;
+}
+
+.button22.gray22{
+color: #8c96a0;
+text-shadow:1px 1px 1px #fff;
+border:1px solid #dce1e6;
+box-shadow: 0 1px 2px #fff inset,0 -1px 0 #a8abae inset;
+background: -webkit-linear-gradient(top,#f2f3f7,#e4e8ec);
+background: -moz-linear-gradient(top,#f2f3f7,#e4e8ec);
+background: linear-gradient(top,#f2f3f7,#e4e8ec);
+}
+
+.gray22:hover{
+background: -webkit-linear-gradient(top,#fefefe,#ebeced);
+background: -moz-linear-gradient(top,#f2f3f7,#ebeced);
+background: linear-gradient(top,#f2f3f7,#ebeced);
+}
+
+.gray22:active{
+top:1px;
+box-shadow: 0 1px 3px #a8abae inset,0 3px 0 #fff;
+background: -webkit-linear-gradient(top,#e4e8ec,#e4e8ec);
+background: -moz-linear-gradient(top,#e4e8ec,#e4e8ec);
+background: linear-gradient(top,#e4e8ec,#e4e8ec);
+}
+	</style>
+	<link rel="stylesheet" href="swipeButton/src/jquery.swipeButton.css" />
+	<script src="jquery-1.8.3.min.js"></script>
+	<script src="swipeButton/dist/jquery.mobile-1.2.0.min.js"></script>
+	<script src="swipeButton/dist/jquery.swipeButton-1.2.1.min.js"></script>
+
+
+<script>
+	// 帮顶事件
+		$(document).ready(function() {
+			$('#swipeMe li').swipeDelete({
+				btnTheme: 'e',    // jqueryMobile主题e
+				btnLabel: '删除', // Name
+				btnClass: 'aSwipeButton',
+				click: function(e){
+					$(this).parent().remove();
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<button class="button22 gray22">BUY NOW</button>
+
+<div data-role="page">
+	<ul id="swipeMe">
+		<li data-swipeurl="">1.滑动右边会出现删除按钮</li>
+		<li data-swipeurl="">2.滑动右边会出现删除按钮</li>
+	</ul>
+</div>
+
+</body>
+</html>

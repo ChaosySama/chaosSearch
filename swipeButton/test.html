@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>右滑动出现删除按钮</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="src/jquery.swipeButton.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="dist/jquery.swipeButton-1.2.1.min.js"></script>
+
+	<script>
+	// 帮顶事件
+		$(document).ready(function() {
+			$('#swipeMe li').swipeDelete({
+				btnTheme: 'e',    // jqueryMobile主题e
+				btnLabel: '删除', // Name
+				btnClass: 'aSwipeButton',
+				click: function(e){
+					alert('别删我嘛！呜呜呜~~');
+				}
+			});
+
+			$('#triggerMe').on('click', function(){
+				$('#swipeMe li:nth-child(1)').trigger('swiperight')
+			});
+
+		});
+	</script>
+
+</head> 
+<body> 
+	<div data-role="page">
+
+		<div data-role="header">
+			<h1>仿iphone滑动出现删除按钮</h1>
+		</div>
+
+		<div data-role="content">
+			<ul id="swipeMe" data-role="listview">
+				<li data-swipeurl="swiped.html?1"><a>1.滑动右边会出现删除按钮</a></li>
+				<li data-swipeurl="swiped.html?2"><a>2.滑动右边会出现删除按钮</a></li>
+			</ul><br />
+			<br /><br />
+			<a href="#" data-role="button" id="triggerMe">显示滑动按钮</a>
+			<a data-role="button">作者：andy matthews后期删减抽取封装：郏高阳</a>
+			
+		</div>
+	</div>
+</body>
+</html>
